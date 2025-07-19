@@ -1,0 +1,16 @@
+{
+  "name": "recycling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch core\\static\\css\\src\\project.scss:core\\static\\css\\dist\\styles.css"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}

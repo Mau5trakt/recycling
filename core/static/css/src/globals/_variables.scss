@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto.ttf");
+}
+
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+$bp-xxl: 1440px;
+$bp-xxxl: 2000px;
+
+$font: "Roboto", serif;
+//Colors
+
+$green: #16a34a;
+$green-light: #1ec266;
+$green-extra: #effdf4;
+$bg: #f0fbf7;
+$border-green: #bbf7d0;
+$green-text-primary: #74b68c;
+$brown: #9a776f;
+
+$transition: all 400ms ease-in-out;
+
