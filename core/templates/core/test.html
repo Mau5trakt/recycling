@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.js'></script>
+    <title>Document</title>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+          const currentYear = new Date().getFullYear();
+
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+            events: [
+                {
+                    title: 'test',
+                    start: `${currentYear}-06-10`
+                },{
+                    title: 'test2',
+                    start: `${currentYear}-07-10`
+                },{
+                    title: 'test3',
+                    start: `${currentYear}-07-10`
+                },{
+                    title: 'test4',
+                    start: `${currentYear}-07-10`
+                },{
+                    title: 'test5',
+                    start: `${currentYear}-07-10`
+                },
+            ]
+
+        });
+
+
+
+        calendar.render();
+      });
+
+    </script>
+</head>
+<body>
+    <h1> Test Tag</h1>
+<div id="calendar">
+
+</div>
+
+</body>
+</html>
