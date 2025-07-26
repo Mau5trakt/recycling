@@ -22,7 +22,9 @@
                                 </div>
                             </div>
                             <div class="homepage__wrapper--ctn-content--summary-ctn--header-progress">
-                                <div class="homepage__wrapper--ctn-content--summary-ctn--header-progress-btn"> 2/5 Registrado </div>
+                                <div class="homepage__wrapper--ctn-content--summary-ctn--header-progress-btn" id="formRegistration">
+                                    2/5 Registrado
+                                </div>
                             </div>
                         </div>
                         <div class="homepage__wrapper--ctn-content--summary-ctn--weights">
@@ -38,6 +40,10 @@
                                 <p class="homepage__wrapper--ctn-content--summary-ctn--weights-card--material">Aluminio</p>
                                 <p class="homepage__wrapper--ctn-content--summary-ctn--weights-card--total">6.4 kg</p>
                             </div>
+                            <div class="homepage__wrapper--ctn-content--summary-ctn--weights-card">
+                                <p class="homepage__wrapper--ctn-content--summary-ctn--weights-card--material">Total</p>
+                                <p class="homepage__wrapper--ctn-content--summary-ctn--weights-card--total">15 kg</p>
+                            </div>
                         </div>
 
                         <div class="homepage__wrapper--ctn-content--summary-ctn--footer">
@@ -45,7 +51,44 @@
                             <p class="homepage__wrapper--ctn-content--summary-ctn--footer--right"> Has registrado todos los materiales el día de hoy </p>
                         </div>
                     </div>
-                    <div class="homepage__wrapper--ctn-content--gallery-ctn"></div>
+                    <div class="homepage__wrapper--ctn-content--gallery-ctn">
+                        <div  class="homepage__wrapper--ctn-content--gallery-ctn--header">
+                            <div class="homepage__wrapper--ctn-content--gallery-ctn--header-title-ctn">
+                                {% include "core/icons/camera.html" %}
+                                <span class="homepage__wrapper--ctn-content--gallery-ctn--header-title-ctn-text">Galería de imagenes</span>
+                            </div>
+                            <button class="homepage__wrapper--ctn-content--gallery-ctn--header-upload-btn">
+                                {% include "core/icons/upload.html" %}
+                                <span class="homepage__wrapper--ctn-content--gallery-ctn--header-upload-btn-text">Subir imagen</span>  </button>
+
+                        </div>
+                        <div  class="homepage__wrapper--ctn-content--gallery-ctn--grid">
+                            <div class="homepage__wrapper--ctn-content--gallery-ctn--grid-image">
+
+                                <span class="homepage__wrapper--ctn-content--gallery-ctn--grid-image-badge">Plástico</span>
+                                <img src="https://placehold.co/900x1600/effaf6/16a34a" alt="image description" id="galleryImg">
+
+                                {% include "core/icons/trash-can.html" %}
+
+
+                            </div>
+                            <div class="homepage__wrapper--ctn-content--gallery-ctn--grid-image">
+                                <span class="homepage__wrapper--ctn-content--gallery-ctn--grid-image-badge">Cartón</span>
+                                <img src="https://placehold.co/1600x900/16a34a/FFF" alt="image description" id="galleryImg">
+                                {% include "core/icons/trash-can.html" %}
+                            </div>
+                            <div class="homepage__wrapper--ctn-content--gallery-ctn--grid-image">
+                                <span class="homepage__wrapper--ctn-content--gallery-ctn--grid-image-badge">Aluminio</span>
+                                <img src="https://placehold.co/900x1600" alt="image description" id="galleryImg">
+                                {% include "core/icons/trash-can.html" %}
+                            </div>
+                            <div class="homepage__wrapper--ctn-content--gallery-ctn--grid-image">
+                                <span class="homepage__wrapper--ctn-content--gallery-ctn--grid-image-badge">Plástico</span>
+                                <img src="https://placehold.co/900x1600" alt="image description" id="galleryImg">
+                                {% include "core/icons/trash-can.html" %}
+                            </div>
+                        </div>
+                    </div>
                     <div class="homepage__wrapper--ctn-content--materials-ctn"></div>
 
                 </div>
